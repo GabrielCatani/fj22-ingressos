@@ -6,7 +6,7 @@ public class DescontoParaEstudantes implements Desconto{
 	
 	@Override
 	public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
-		return precoOriginal.subtract(new BigDecimal("2.0"));
+		return precoOriginal.divide(new BigDecimal("2.0"));
 	}
 
 }
